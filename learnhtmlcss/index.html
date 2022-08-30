@@ -7,72 +7,72 @@
 	<title>learn html css</title>
 </head>
 <body>
-<form action="#" method="post" enctype="multipart/form-data">
+
+<form action="#" name="myform" method="get" enctype="multipart/form-data">
 	<div>
-		<p>Имя</p>
-		<input type="text" name="username" tabindex="1" placeholder="Имя">
+		<p><label for="poisk">Введите запрос</label></p>
+		<input type="search" id="poisk" >
 	</div>
 
 	<div>
-		<p>Имя</p>
-		<input type="password" name="userpass" tabindex="2" placeholder="Пароль">
+		<p><label for="username">Имя:</label></p>
+		<input id="username" type="text" placeholder="Введите Имя" required autofocus>
 	</div>
 
 	<div>
-		<p>Номер телефона</p>
-		<input type="tel" name="userphone" tabindex="3" placeholder="Номер телефона">
+		<p><label for="userpass">Пароль:</label></p>
+		<input id="userpass" type="password" placeholder="Введите Пароль" required>
 	</div>
 
 	<div>
-		<p>Пол</p>
-		<div>
-			<input checked type="radio" name="gender" value="male" tabindex="4"> Мужской
-		</div>
-		<div>
-			<input type="radio" name="gender" value="female" tabindex="4"> Женский
-		</div>
+		<p><label for="phone">Номер телефона:</label></p>
+		<input type="tel" placeholder="Введите Номер телефона" maxlength="13" id="phone">
 	</div>
 
 	<div>
-		<p>Имущество</p>
-		<div>
-			<input tabindex="5" checked type="checkbox" name="bike" value="yes">Велик
-		</div>
-		<div>
-			<input tabindex="6" type="checkbox" name="car" value="yes">Машина
-		</div>
-		<div>
-			<input tabindex="7" disabled type="checkbox" name="house" value="yes">Дом
-		</div>
+		<p><label for="website">Ваш сайт:</label></p>
+		<input type="url" id="website" placeholder="Есть ли ваш сайт?">
 	</div>
 
-<div>
-	<p>Дополнительная информация</p>
-	<textarea tabindex="8" name="text"></textarea>
-</div>
 
-<div>
-	<p>Прикрепить фото</p>
-<input tabindex="9" type="file" name="userphoto">
-</div>
-
-<div>
-	<p>Любимый цвет</p>
-	<select tabindex="10" name="color" id="">
-		<option value="red">красный</option>
-		<option value="green">зелёный</option>
-		<option selected value="yellow">желтый</option>
-	</select>
-</div>
+<br>
+	<div>
+		<input type="submit">
+	</div>
+	<br>
+	<div>
+		<input type="reset">
+	</div>
 
 
-<div>
-	<p>Действие</p>
-	<button tabindex="11" type="submit">Отправить</button>
-	<button tabindex="12" type="reset">Очистить</button>
-</div>
+	<div>
+		<p><label for="gender">Ваш пол</label></p>
+		<input type="radio" name="urgender" id="gender" checked>Мужской
+		<input type="radio" name="urgender">Женский
+	</div>
+
+	<div>
+		<p><label for="song">Забирай меня скорей</label></p>
+		<p><input type="checkbox" name="thissong" id="song">Увози за сто морей</p>
+		<p><input type="checkbox" name="thissong">И целуй меня везде</p>
+		<p><input type="checkbox" name="thissong" checked>Я ведь взрослая уже</p>
+
+	</div>
+
+
 
 </form>
+
+
+
+
+
+
+
+
+	</form>
+
+
 
 
 
